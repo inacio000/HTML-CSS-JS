@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* Configurações global para colocar a altura em 100% e usar o degrade de cima para baixo*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+
+body {
+    background-image: linear-gradient(to left, #626B73, #79838C, #8D9CA6);
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.432);
+    border-radius: 3%; /* Arredondar as pontas do main */
+    box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.411);
+    width: 600px;
+    padding: 10px;
+    margin: auto; /* Centralizando */
+}
+
+h1 {
+    color: #192D2C;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(255, 228, 196, 0.568);
+    /* Sobra. lateral, baixo, espalhamento*/
+}
+
+h2 {
+    color: #17316B;
+}
+
+p {
+    text-align: justify;
+}
