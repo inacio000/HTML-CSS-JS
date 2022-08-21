@@ -1,0 +1,9 @@
+Formulário: Responsável por fazer a integração entre o front-end e o back-end.
+    - Captura emais
+    - Campo de contacto com o dono da página
+
+    <form method="___" action="___">
+        method - GET (dados são enviados), POST
+        action - endereсço http
+    <input type="___">
+        type - text, submit

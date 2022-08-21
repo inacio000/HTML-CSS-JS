@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position - fixed</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        .quadrado {
+            /* display: inline-block; */
+            width: 100px;
+            height: 100px;
+        }
+
+        .quadrado-red {
+            background-color: red;
+        }
+        .quadrado-blue {
+            position: fixed;
+            right: 0;
+            background-color: blue;
+        }
+        .quadrado-green {
+            background-color: green;
+        }
+        .quadro {
+            position: relative;
+            width: 500px;
+            height: 4000px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="quadro">
+        <div class="quadrado quadrado-red"></div>
+        <div class="quadrado quadrado-blue"></div>
+        <div class="quadrado quadrado-green"></div>
+    </div>
+</body>
+</html>

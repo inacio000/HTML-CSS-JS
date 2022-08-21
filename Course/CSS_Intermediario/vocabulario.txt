@@ -1,0 +1,46 @@
+Display: 
+    - block (div, p): Um bloco que vai do início até o final da página.
+        podemos mudar a altura e a largura
+        O próximo conteúdo vai na linha a seguir
+
+    - inline (span)
+
+    - inline-block: Com as caracteristicas do "inline", mas permite alterar a altura e largura e continuando na mesma linha.
+
+    - none: como se o elemento nunca tivesse sido colocado na tela.
+
+
+Overflow: Quando o conteudo dentro do elemento é maior que o próprio elemento.
+
+    - visible (valor padrao)
+    - hidden: oculta toda parte do conteudo que estiiver fora do container
+
+    - scroll
+    - auto: coloca o scroll apenas onde será necessário
+
+    - auto: pega todos elementos dentro da <div>, mesmo que estejam flutuando.
+
+
+Alinhamento horizontal
+    - para <div> utilizamos a margin: auto; para centralizar
+    - para imagens, utilizamos Display: block; e só assim a margin: auto; vai funcionar 
+
+    - caso o Display for "inline", colocamos a imagem em uma <div> ou um outro elemento e mudamos o posicionamento a partir do "text-alighn: center;"
+
+Position:
+    - static (padrao): faz com que todo elemento se encaixe debaixo do outro (Display: block;) ou de lado do outro (Display: inline;)
+
+    - relativo: relativo ao posicionamento padrao. Não altera a posição de nenhum outro elemento, apenas do que está sendo alterado.
+        nos permite utilizar outras propriedades (left, right etc)
+
+    - absolute
+
+    - fixed: mantem o elemento fixo em relacao a viewport
+
+Float: propriedade "Display" que permite com que o elemento fique flutuando ao lado de um outro elemento
+
+viewport: adaptacao em telas
+
+Responsividade: 
+
+Media Queries: para dar comportamento diferente a algum elemento, dependendo do tamanho da tela.

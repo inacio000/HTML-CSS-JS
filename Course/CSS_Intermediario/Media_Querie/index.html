@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querie</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+        }
+
+        .header {
+            overflow: hidden;
+            margin: auto; /* centralizar */
+            width: 80%;
+            background-color: blanchedalmond;
+            padding: 15px;
+            font-size: 18px;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+
+        li {
+            /* display: inline-block; */
+            float: left;
+            margin-right: 15px;
+        }
+
+        .logo {
+            float: left;
+        }
+
+        @media screen and (max-width: 560px) {
+            .logo {
+                float: none;
+                text-align: center;
+            }
+
+            .menu {
+                margin-top: 20px;
+                float: none;
+                text-align: center;
+            }
+
+            li {
+                float: none;
+                margin-bottom: 5px;
+                padding: 10px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Logo</div>
+        
+        <ul class="menu">
+            <li>Home</li>
+            <li>Course</li>
+            <li>Contact</li>
+            <li>Escritorios</li>
+            <li>Localizacao</li>
+        </ul>
+
+    </div>
+</body>
+</html>

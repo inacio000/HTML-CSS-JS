@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        .card {
+            position: relative;
+            float: left;
+            width: 400px;
+            height: 200px;
+            border: 2px solid blanchedalmond;
+            text-align: center;
+        }
+
+        .card2 {
+            clear: left;
+            float: left; /* para nao ocupar a tela toda */
+            border: 2px solid blanchedalmond;
+            padding: 100px 150px;
+        }
+
+        .c1 {
+            background-color: beige;
+            line-height: 200px;
+        }
+
+        .c2 {
+            position: absolute;
+            top: 50%; /* referente ao elemento PAI */
+            left: 50%;
+            background-color: blanchedalmond;
+
+            transform: translate(-50%, -50%); /* referente ao conteudo */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="c1">
+            Inacio Raimundo
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="c2">
+            Inacio Raimundo
+        </div>
+    </div>
+
+    <div class="card2">
+        <div>
+            Inacio Raimundo
+        </div>
+    </div>
+
+</body>
+</html>
