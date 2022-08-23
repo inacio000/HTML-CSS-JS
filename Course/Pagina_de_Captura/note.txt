@@ -1,0 +1,8 @@
+Página de Captura:
+    Uma maneira de divulgar informações sobre um assunto a pessoas interessadas. De modo a saberem quem é o criador do conteudo e etc, criando assim um meio de comunicação em massa.
+
+    mailchimp: para criar um formulario e reutilizar em uma página
+
+Formulário:
+    Tem duas informações importantes (methode e action)
+        - action: endereço que vai mandar os dados do formulário. E o servidor do endereço que foi configurado será capaz de processar esses dados (armazenando)
