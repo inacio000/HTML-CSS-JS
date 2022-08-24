@@ -130,7 +130,7 @@ footer a:hover h3 {
 
 @media screen and (max-width: 570px) {
     .palestrates {
-        display: inline-block;
+        display: block;
     }
     .section {
         background-image: url(../images/pessoas0.jpg);
