@@ -28,7 +28,7 @@ section {
     padding: 20px;
     background-image: url(../images/people.jpg);
     background-size: cover;
-    overflow: hidden; /* fazendo com a imagem preencha o espaco que deve preencher */
+    overflow: hidden; /* fazendo com que a imagem preencha o espaco que deve preencher */
 }
 
 .formContainer {

@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color1: #05AFF2;
+    --color2: #05C7F2;
+    --color3: #26BF94;
+    --color4: #F2AB27;
+    --color5: #F2F2F2;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: #F2AB27AA;
+    text-align: center;
+    padding: 5px;
+}
+
+.title {
+    font-size: 20px;
+    color: var(--color5);
+}
+
+section {
+    padding: 20px;
+    background-image: url(../images/pessoas.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.formContainer {
+    max-width: 250px;
+    background-color: #F2F2F2AA;
+    padding: 20px;
+    float: right;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.margin-botton {
+    margin-bottom: 30px;
+}
+
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.submit {
+    color: white;
+    background-color: #F2AB27CC;
+}
+.submit:hover {
+    background-color: #F2AB27;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+
+    background-position: calc(100% - 10px) center;
+}
+
+footer {
+    background-image: linear-gradient(to top, #c4b08baa, #F2AB27AA);
+    padding: 0;
+    text-align: center;
+}
+
+.subtitle {
+    padding: 15px;
+    font-size: 25px;
+}
+
+
+.picture {
+    width: 150px;
+}
+
+.description {
+    display: inline-block;
+    text-align: left;
+    max-width: 150px;
+    margin-left: 40px;
+    padding: 10px 10px 10px 0;
+}
+
+.description p, h3 {
+    color: var(--color5);
+    margin-bottom: 10px;
+}
+
+.palestrates {
+    display: flex;
+}
+
+footer a {
+    color: var(--color5);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover h3 {
+    text-decoration: underline;
+    color: #F2AB27CC;
+    transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 570px) {
+    .palestrates {
+        display: inline-block;
+    }
+}
