@@ -1,0 +1,30 @@
+DOMÍNIO & HOSPEDAGEM
+    Caso fores fazer a Hospedagem e Domínio em empresas diferentes, primeiro registra-se o Domínio e depois a Hospedagem, porque para Hospedagem é necessário um Domínio.
+    Salvo se o fizeres na mesma empresa. 
+
+Você pode registrar o seu domínio em uma empresa e a hospedagem em outra.
+
+Domínio
+
+    - Registro de Domínio: Caso for .com.br, a melhor opção é registrar direto no "registro.br"
+
+    - Sites para registrar domínios
+        - www.superdominios.org (.com  .net  )
+    
+    - Propagação do Domínio
+        Normalmente demora 72h no máximo para estar disponível
+
+Hospedagem
+    - Revenda de hospedadem (Máquina compartilhada)
+        Inclui ferramentas para conseguir separar vários sites dentro da sua conta.
+            Para questões em que o Dev hospeda os sites de seus clientes. Para melhor gerenciamento dos clientes, podendo controlar o fluxo de regularização de pagamento de cada clientes.
+
+    - Hospedagem de Sites (Apenas um site)
+        Para sites pessoais ou caso tenhas vendido um projeto e a hospedagem será responsabilidade do cliente.
+
+    - Sites para hospedadem
+        - www.hostgator.com.br
+
+
+cPanel
+    - Painel de controle do site
