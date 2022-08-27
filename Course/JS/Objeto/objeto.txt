@@ -1,0 +1,14 @@
+Objetos
+    - Conjunto de elementos organizados por "Chaves: Valores"
+    - Relação entre Chaves e Valore
+    
+    Acessamos os elementos atravéz chaves  
+
+    Uma propriedade de um objeto pode receber um valor de qualquer tipo de variavel.
+
+    Em Objeto
+        - Variáveis: São propriedades
+        - Métodos: São funções
+        - Instânciade: É o modelo de um objeto transformado em um objeto.
+
+    ATT: Tudo em JS é um objeto.

@@ -1,0 +1,4 @@
+Array:
+    - Conjunto de elementos/dados organizados de fomrma sequêncial
+
+    - Acessamos os elementos atravéz do "índice"
