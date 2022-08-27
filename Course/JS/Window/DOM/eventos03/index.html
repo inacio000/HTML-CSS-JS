@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+    <script>
+        function loaded() {
+            
+            let t = document.getElementById("title")
+
+            // t.onclick = changeText
+
+            t.addEventListener("click", changeText)
+        }
+
+        function changeText() {
+            this.innerHTML = "New text"
+        }
+    </script>
+</head>
+
+<body onload="loaded()">
+
+    <h1 id="title">Test</h1>
+
+</body>
+</html>

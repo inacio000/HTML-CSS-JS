@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    
+    <script>
+        function h1Clicked() {
+            console.log("Executando a função")
+        }
+
+        function changeH1(i) {
+            // let input = document.getElementById("text")
+            let h1 = document.getElementsByTagName("h1")[0]
+            h1.innerText = i.value
+        }
+
+        function hiddeH1() {
+            let h1 = document.getElementsByTagName("h1")
+            h1.style.display = "none";
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        div {
+            display: inline-block;
+            padding: 20px;
+            font-size: 2rem;
+            background-color: antiquewhite;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1">Click me</h1>
+    
+    <h2 onclick="console.log(this)">Click me again</h2>
+
+    <h3 onclick="this.style.color = 'red'">Again</h3>
+
+    <!-- <input type="text" onchange="changeH1(this)"> -->
+    <input type="text" oninput="changeH1(this)">
+    <div onclick="hiddeH1(this)">Click</div>
+
+</body>
+</html>

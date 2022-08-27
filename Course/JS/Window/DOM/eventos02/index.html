@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <script>
+        function onOver(element) {
+            element.style.backgroundColor = "red"
+        }
+
+        function onOut(element) {
+            element.style.backgroundColor = "antiquewhite"
+        }
+    </script>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        img {
+            display: block;
+            width: 200px;
+            margin-bottom: 30px;
+        }
+
+        div {
+            display: inline;
+            padding: 10px;
+            font-size: 2rem;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body onload="console.log('Pagina carregada')">
+    <img src="image/code.png" alt="">
+
+    <div onmouseover="onOver(this)"
+        onmouseout="onOut(this)">Click</div>
+</body>
+</html>
