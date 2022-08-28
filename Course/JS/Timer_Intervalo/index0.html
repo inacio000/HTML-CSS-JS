@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer e Intervalo</title>
+
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+
+    <script>
+
+        var number = 0
+
+        var interval
+
+        function updateText() {
+            let h = document.getElementsByTagName("h1")[0]
+            h.innerHTML += ` ${number}`
+            number++
+        }
+
+        function start() {
+            interval = setInterval(updateText, 1000)
+        }
+
+        function stop() {
+            clearInterval(interval)
+        }
+
+    </script>
+</head>
+<body>
+
+    <h1>Title</h1>
+    <input onclick="start()" type="submit" value="Start">
+    <input onclick="stop()" type="submit" value="Stop">
+
+</body>
+</html>

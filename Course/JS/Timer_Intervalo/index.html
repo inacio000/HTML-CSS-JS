@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer e Intervalo</title>
+
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+
+    <script>
+
+        // function changeColor() {
+        //     let h = document.getElementsByTagName("h1")[0]
+        //     h.style.color = "blue"
+        // }
+
+        // function changeText() {
+
+        //     let h = document.getElementsByTagName("h1")[0]
+        //     h.innerHTML = "New title"
+
+        //     setTimeout(changeColor, 3000)
+        // }
+
+        var number = 0
+
+        function updateText() {
+            let h = document.getElementsByTagName("h1")[0]
+            h.innerHTML += ` ${number}`
+            number++
+        }
+
+        function changeText() {
+            setTimeout(updateText, 3000)
+        }
+
+    </script>
+</head>
+<body>
+    
+    <h1>Title</h1>
+
+    <input onclick="changeText()" type="submit" value="Change">
+
+</body>
+</html>
