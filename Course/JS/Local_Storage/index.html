@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+
+    <script>
+
+        // localStorage.setItem("name:", "Inacio")
+        // let data = localStorage.getItem("name")
+        // console.log(data)
+        // localStorage.getItem
+        // localStorage.removeItem
+
+        onload = function () {
+            let name = localStorage.getItem("name")
+            let h1 = document.getElementById("name")
+            h1.innerHTML = name
+        }
+        
+        function atualizar(element) {
+            let valor = element.value
+            console.log(valor)
+
+            let h1 = document.getElementById("name")
+            h1.innerHTML = valor
+
+            localStorage.setItem("name", valor)
+        }
+
+
+        let a = {name: "Inacio", n: 8}
+        localStorage.setItem("studant", JSON.stringify(a))
+
+        let b = localStorage.getItem("studant")
+        console.log(a)
+        console.log(b)
+        console.log(JSON.parse(b))
+    </script>
+
+</head>
+<body>
+    
+    <h1 id="name"></h1>
+    <input type="text" oninput="atualizar(this)">
+
+</body>
+</html>

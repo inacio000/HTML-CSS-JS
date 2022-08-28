@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio</title>
+
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+
+    <script>
+
+        let people = ["Inacio", "Martinho", "Raimundo", "Manucho", "Luis", "Isaias"]
+
+        function sortear() {
+            let numberPeople = people.length
+
+            let numberSorteados = Math.floor(Math.random() * numberPeople)
+
+            document.getElementById("d").innerHTML = people[numberSorteados]
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <h1 id="d"></h1>
+    <button onclick="sortear()">Sortear</button>
+</body>
+</html>

@@ -1,0 +1,18 @@
+Local Storage:
+    O ato de persistitência de dados.
+
+    Métodos:
+        - .setItem(): Grava os dados nos arquivos/memória do navegador.
+
+        - .getItem(): Pega os dados guardados na memória.
+
+        - .removeItem(): Remove os dados da memória de modo a não ser mais acessível.
+
+        - .clear(): Apaga tudo da memória
+
+
+
+Desafio:
+    Crie uma lista de tarefas que tenha um input para receber a tarefa, e armazene na memória utilizando o LocalStorage.
+
+    Dica: Utilize Arrays e Json

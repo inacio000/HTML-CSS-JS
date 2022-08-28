@@ -1,0 +1,5 @@
+JSON (Java - Script - Object - Notaction): Notação de um Objeto JavaScript
+    Representação de um objeto.
+    Métodos
+        parse - Transforma uma "string" em um "Objeto JSON"
+        stringfy - Transforma um "Objeto JSON" em uma string
