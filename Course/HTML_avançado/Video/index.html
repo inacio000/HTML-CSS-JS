@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDEO</title>
+
+    <style>
+       
+        .container {
+            position: relative;
+            width: 2000px;
+            height: 1000px;
+        }
+
+        .video {
+            width: 100%;
+        }
+
+        .control {
+            position: absolute;
+            top: 0;
+            width: 2001px;
+            height: 1125px;
+            /* background-color: bisque; */
+            text-align: center;
+        }
+
+        .btn {
+            position: relative;
+            width: 100px;
+            margin: 10px;
+            top: 90%;
+            transform: translateY(1%);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <video id="video1" class="video" src="vd/Meu-Video.webm"></video>
+        
+        <div id="controls" class="control">
+            <img class="btn" onclick="back()" src="control_icon/back.png">
+            <img class="btn" onclick="forward()" src="control_icon/forward.png">
+            <img class="btn" onclick="minus()" src="control_icon/minus.png">
+            <img class="btn" onclick="plus()" src="control_icon/plus.png">
+            <img class="btn" onclick="play()" src="control_icon/play.png">
+            <img class="btn" onclick="stopVideo()" src="control_icon/stop.png">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

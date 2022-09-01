@@ -1,0 +1,10 @@
+Atributos
+    - controls
+    - autoplay
+    - muted
+    - loop
+    - poster: passando imagem
+    - preload:
+        - auto: Após a página terminar de carregar, o video já será carregado na memória do navegador.
+        - metadata: Após a página terminar de carregar, será carregado apenas alguns dados que não seja o conteúdo, como (nome e tamanho do video e etc)
+        - none: Contrário do auto, carrega após o click no play
