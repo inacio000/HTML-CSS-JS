@@ -1,0 +1,34 @@
+body {
+    background-color: #efefef;
+}
+
+p::first-line {
+    color: cadetblue;
+}
+h1::first-letter {
+    color: green;
+    font-size: 4rem;
+}
+
+li {
+    list-style: none;
+    /* margin-left: 500px;
+    list-style-image: url(image/like.png); */
+}
+
+li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(image/like.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+p::selection {
+    background-color: bisque;
+    color: gray;
+}

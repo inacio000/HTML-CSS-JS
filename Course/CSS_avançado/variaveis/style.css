@@ -1,0 +1,30 @@
+:root {
+    --var-color:bisque;
+    --square-size: 300px;
+}
+
+body {
+    background-color: gray;
+}
+
+.p2 {
+    color: var(--var-color);
+    font-size: 20px;
+}
+
+.p3 {
+    color: var(--var-color);
+    font-size: 17px;
+}
+
+.square1 {
+    width: var(--square-size);
+    height: var(--square-size);
+    background-color: var(--var-color);
+}
+
+.square2 {
+    width: var(--square-size);
+    height: var(--square-size);
+    background-color: aqua;
+}

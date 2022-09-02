@@ -1,0 +1,52 @@
+Seletores:
+    São maneiras de selecionar alguns elementos.
+        .classname
+        #idname
+        div, h1, p, etc
+
+        ex:
+            #header + p {
+                ...
+            } Para todo elemento (p) imediatamente apos o header, até chegar a uma div.
+
+
+
+
+            #header ~ p {
+                ...
+            } Para todos elementos (p) apos o header sem se importando com as divs.
+
+
+
+
+            [width] {
+                ...
+            } Atributo como seletor
+
+            ou especificar: [width="500"]
+
+
+
+
+            [title~="title"] {
+                ...
+            } Pegando todos os titulos com a palavra "title"
+
+            ou com alguma inicial: [title~="ti"]
+            ou pela terminação: [title$="1"]
+            ou para todo "___" que estiver em qualquer lugar: [title*="tu"]
+
+
+
+
+            Pegando um elemento pelo js:
+                <script>
+                
+                    let titulo = document.querySeletor("[title]")
+
+                    console.log(titulo)
+
+                </script>
+
+                ou para pegar todos os elementos:
+                    querySeletorAll("[title]")

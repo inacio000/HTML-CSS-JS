@@ -1,0 +1,40 @@
+body {
+    background-color: gray;
+}
+
+
+input:focus {
+    color: cadetblue;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    font-size: 25px;
+}
+
+li:first-child { 
+    /* Pegando o primeiro filho de um elemento acima */
+    color: floralwhite;
+}
+
+li:nth-child(2) {
+    /* Pegando o segundo filho */
+    color: darkseagreen;
+}
+
+li:nth-last-of-type(even) {
+    /* Pegando apenas os impares */
+    background-color: olive;
+    color: beige;
+}
+
+li:nth-last-of-type(odd) {
+    /* Pegando apenas os pares */
+    background-color: #afafaf;
+    color: chartreuse;
+}
