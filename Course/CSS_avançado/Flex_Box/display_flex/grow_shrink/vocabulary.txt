@@ -1,0 +1,12 @@
+flex-shrink (Encolher): 
+    Propriedade dos elementos no "displey flex", como dois valores (0 e 1)
+        0 (Não pode encolher)
+        1 (Pode encolher) - Padrão
+
+
+flex-grow (Aumentar):
+    Propriedade dos elementos no "displey flex", que aumenta no alargamento da tela preenchendo todo espaço vazio restante. Tem vários valores numéricos, após o 1, todos valores passados serão a multiplicação pelo tamanho normal dos outros elementos.
+    0 (Não pode crescer) - Padrão
+    1 e outros (Pode aumentar)
+
+    Normalmente ele descarta o width.

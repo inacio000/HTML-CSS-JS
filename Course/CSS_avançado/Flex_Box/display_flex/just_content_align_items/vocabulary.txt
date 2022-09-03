@@ -1,0 +1,7 @@
+justify-content: Modifica a posição dos elementos na horizontal por padrão, dependendo do "flex-direction".
+
+justify-content: flex-start(default) | flex-end | center | space-between | space-around | space-evenly | start | end | left
+
+
+
+align-items: stretch(default) | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end

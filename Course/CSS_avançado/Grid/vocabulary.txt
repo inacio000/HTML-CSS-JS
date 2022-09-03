@@ -1,0 +1,2 @@
+grid (grelha): Conjunto de elementos ordenados por linhas e colunas.
+    fr - unidade de medida exclusiva para grid.

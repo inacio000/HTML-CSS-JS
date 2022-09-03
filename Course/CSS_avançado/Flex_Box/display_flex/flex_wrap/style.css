@@ -1,0 +1,31 @@
+body {
+    background-color: gray;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    /* flex-wrap: wrap; Proteje o tamanho do elemento */
+
+    background-color: bisque;
+    height: 400px;
+    color: white;
+}
+
+.r1 {
+    background-color: red;
+}
+
+.r2 {
+    background-color: blue;
+}
+
+.r3 {
+    background-color: green;
+}
+
+.rect {
+    width: 150px;
+    height: 150px;
+
+}

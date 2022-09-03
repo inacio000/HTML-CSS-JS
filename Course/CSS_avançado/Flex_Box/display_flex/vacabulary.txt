@@ -1,0 +1,5 @@
+Flex-Box (Caixa Flexível):
+    Onde teremos que fazer com que todos elementos sejam flexíveis o suficiente para se adaptarem ao elemento PAI.
+
+    Objetivo:
+        Criar um design que seja flexível em qualquer tamanho de tela.

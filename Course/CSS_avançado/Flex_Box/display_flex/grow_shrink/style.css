@@ -1,0 +1,32 @@
+body {
+    background-color: gray;
+}
+
+.container {
+    display: flex;
+    
+
+    background-color: bisque;
+    height: 400px;
+    color: white;
+}
+
+.r1 {
+    flex-grow: 1;
+    background-color: red;
+}
+
+.r2 {
+    flex-grow: 1;
+    background-color: blue;
+}
+
+.r3 {
+    flex-grow: 1;
+    background-color: green;
+}
+
+.rect {
+    height: 100px;
+
+}
