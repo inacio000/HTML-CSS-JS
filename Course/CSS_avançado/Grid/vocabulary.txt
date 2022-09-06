@@ -1,2 +1,6 @@
 grid (grelha): Conjunto de elementos ordenados por linhas e colunas.
     fr - unidade de medida exclusiva para grid.
+
+    justify and align items: Alinham os elementos em relação ao espaço da grid.
+
+    justify and align content: Alinham os espaço da grid em relação ao container.
