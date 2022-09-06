@@ -1,0 +1,19 @@
+@keyframes changeColor {
+    0% {background-color: red;}
+    25% {background-color: yellowgreen;}
+    50% {background-color: yellow;}
+    100% {background-color: blue;}
+}
+
+body {
+    background-color: gray;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    animation-name: changeColor;
+    animation-duration: 20s;
+}
+
