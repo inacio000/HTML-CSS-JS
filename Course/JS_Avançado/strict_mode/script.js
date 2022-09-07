@@ -1,4 +1,13 @@
+"use strict" // torna a declaração das variáveis obrigatórias
 
 
-var x = 7
-console.log(x)
+function print() {
+    
+    var x = 7
+    console.log(x)
+
+}
+
+print()
+// console.log(x)
+console.log(window)
