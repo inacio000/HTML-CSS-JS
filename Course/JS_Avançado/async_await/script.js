@@ -1,37 +1,33 @@
-// Promise: Objeto que recebe como argumento uma função (outra forma de criar callback)
-
+// Async Await
 
 let users = ['Inacio', 'Martinho', 'Raimundo']
 
 function insertUser(name) {
 
     let promise = new Promise(function(resolve, reject) {
-
-        setTimeout( () => {
+        setTimeout(() => {
             users.push(name)
-
-            let error = true
+            let error = false
 
             if(!error) {
                 resolve()
             }else {
-                reject({msg: "Anything went wrong!"})
+                reject({msg: "Something wents wrong!"})
             }
         }, 1000)
-
     })
 
     return promise
 
 }
 
-
-function listUsers() {
+function listUser() {
     console.log(users)
 }
 
-insertUser('In')
-    .then(listUsers)
-    .catch((error) => {
-        console.log(error.msg)
-})
+async function execute() {
+    await insertUser('In')
+    listUser()
+}
+
+execute()
