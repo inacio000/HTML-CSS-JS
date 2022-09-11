@@ -1,0 +1,11 @@
+Fala Pessoal, uma dúvida do Gustavo me fez perceber que é interessante ter mais uma explicação sobre o objeto response que é o objeto retornado quando utilizamos uma fetch.
+
+Na aula utilizamos o método fetch para pegar os dados de um servidor que nos entrega um json.
+
+O método json() que utilizamos, é um método do ojbjeto response. Esse objeto tem outros tipos de atributos e métodos que podemos conferir aqui:
+
+https://developer.mozilla.org/en-US/docs/Web/API/Response​
+
+Isso é para explicar por que ficou parecendo que eu tirei esse json() do nada. Na verdade eu estou utilizando um método desse objeto. Existem outros como blob() e text().
+
+Dêem uma olhada no link acima
