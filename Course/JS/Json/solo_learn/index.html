@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Learn</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        function test(...args) {
+            console.log(typeof args)
+        }
+
+        test(12)
+
+        const o = {id: "hi", age: 10}
+        const o1 = {id: "hi", age: 10}
+        console.log(o === o1)
+        let a = Math.max()
+        let b = Math.min()
+
+        console.log(a)
+        console.log(b)
+
+        let a1 = 3
+        let b1 = new Number(3)
+        let c1 = 3
+
+        console.log(a1 == b1)
+        console.log(a1 === b1)
+        console.log(b1 === c1)
+
+        const set = new Set()
+        set.add(5)
+        set.add('hello')
+        set.add({ name: 'Inacio'})
+        for (let i of set) {
+            console.log(i + 6)
+        }
+    </script>
+</body>
+</html>
