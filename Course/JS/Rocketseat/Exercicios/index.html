@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        
+        // 1. declarando a variavel
+        let weight 
+        //weight = 60.3
+
+        // 2. que tipo ela é
+        console.log(typeof weight) 
+
+        // 3. declarando e atribuindo valores a variaveis
+        let name = 'Inacio'
+        let age = 20
+        let weight0 = 60.4
+        let isSubscribed = true
+
+        let student = {}
+
+        // 4. que tipo ela é a variavel student
+        console.log(typeof student)
+
+        // 4.1 atribuir as prpriedades e valores do exercicio 3
+        student = {
+            name: 'Inacio',
+            age: 20,
+            weight: 60.4,
+            isSubscribed: true
+        }
+
+        /* 4.2 mostre no console a seguinte msg:
+            <name> de idade <age> pesa <weight> kg.
+        */
+       console.log(`${student.name} is ${student.age} years old and he weighs ${student.weight} kg`)
+
+       // 5 declarar uma variavel do tipo array de nome students e atribua a ela nenhum valor, ou seja, somente o Array vazia.
+       let students = []
+
+       // 6 reatribua valor para variavel acima, colocando dentro o objeto student da questao 4.
+       students = [
+        student
+       ]
+       console.log(students)
+
+       // 7 coloque no console o valor da posicao zero do Array acima
+       console.log(students[0])
+
+       // 8 crie um novo student e coloque na posicao 1 do Array
+       Raimundo = {
+        name: 'Raimundo',
+        age: 24,
+        weight: 67.1,
+        isSubscribed: false
+       }
+
+       students[1] = Raimundo
+
+       console.log(students)
+
+       // sem rodar o codig, responda qual é a resposta do código abaixo e por que? Após sua resposta, rode o código e veja se você acertou. (hoistin)
+
+       console.log(a)
+       var a  = 1
+    </script>
+    
+</body>
+</html>
