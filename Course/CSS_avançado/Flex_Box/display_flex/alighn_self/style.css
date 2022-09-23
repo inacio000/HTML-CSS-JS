@@ -4,7 +4,6 @@ body {
 
 .container {
     display: flex;
-    flex-wrap: ;
 
     background-color: bisque;
     height: 400px;
