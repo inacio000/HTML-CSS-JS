@@ -146,3 +146,55 @@ console.log(person)
     console.log(one <= 1)
     console.log(one <= 0)
 ```
+
+
+# Operadores de atribuição
+    Veremos nesta aula sobre operadores de atribuição. Quando falamos em atribuição, queremos na verdade dizer assignment, que já vimos bastante, mas podemos também realizar diferentes tipos de atribuição, usando operadores aritméticos.
+
+    Exemplos:
+
+```js   
+    // Operadores de atribuição (Assignment)
+    let x
+
+    // assignment normal:
+    x = 1
+
+    // addition assignment (adição):
+    x += 2
+
+    // subtraction assignment (subtração):
+    x -= 1
+
+    // multiplication assignment (multiplacação):
+    x *= 2
+
+    // division assignment (divisão):
+    x /= 2
+
+    // exponetiation assignment (exponenciação):
+    x **= 2
+
+    // remainder assignment (resto de divisão):
+    x %= 2
+```
+
+# Operadores lógicos
+
+
+# Operador condicional ternário
+    Os operadores ternários, conhecidos como operadores de condição, como o nome sugere, são dependentes de condições e podem entregar valores diferentes com base nelas.
+
+    Funciona da seguinte forma;
+
+    condição ? valor1 : valor2
+    Exemplo de uso:
+```js
+    // Café da manhã top
+    let pao = false
+    let queijo = false
+
+    const niceBreakfast = pao || queijo ? 'Café top' : 'Café ruim'
+
+    console.log(niceBreakfast)
+```

@@ -7,15 +7,15 @@ console.log(techs)
 techs.push('react js')
 console.log(techs)
 
-// adicionar no começo
+// adicionar um item no começo
 techs.unshift('sql')
 console.log(techs)
 
-// remover do fim
+// remover um item do fim
 techs.pop()
 console.log(techs)
 
-// remover do começo
+// remover um item do começo
 techs.shift()
 console.log(techs)
 
