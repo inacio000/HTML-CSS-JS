@@ -1,0 +1,18 @@
+body {
+    background-image: url(../image/bg.jpg);
+    /* background-color: darkslategrey; */
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+.container {
+    width: 800px;
+    margin: 30px auto;
+    color: white;
+    text-align: center;
+    padding-top: 25%;
+}
+
+h1 {
+    font-size: 3em;
+}
