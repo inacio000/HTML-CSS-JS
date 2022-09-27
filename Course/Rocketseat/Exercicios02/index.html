@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+
+        function getScore(score) {
+            if (score > 0 && score < 60)
+                console.log('F')
+
+            else if (score >= 60 && score <= 69)
+                console.log('D')
+                
+            else if (score >= 70 && score <= 79)
+                console.log('C')
+
+            else if (score >= 80 && score <= 89)
+                console.log('B')
+
+            else if (score > 90)
+                console.log('D')
+
+            else
+                console.log('Insert a valid note!')
+
+        }
+
+        getScore(101)
+        getScore(-3)
+        getScore(0)
+        getScore(1)
+        getScore(45)
+        getScore(60)
+        getScore(61)
+        getScore(65)
+        getScore(75)
+        getScore(85)
+        getScore(95)
+    </script>
+
+</body>
+</html>

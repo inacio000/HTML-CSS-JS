@@ -46,7 +46,7 @@
             break
         default: // caso nenhum valor seja o correto, realizará a 
                             //instrução dentro de si.
-            console.log('default')
+        console.log('default')
             break
     }
 ```
