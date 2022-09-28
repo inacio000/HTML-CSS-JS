@@ -12,4 +12,3 @@
     * entre 70 - 79   -   C
     * entre 60 - 69   -   D
     * menor que 60    -   F
-    A partir de 0:45 o Mayk realiza a correção.
