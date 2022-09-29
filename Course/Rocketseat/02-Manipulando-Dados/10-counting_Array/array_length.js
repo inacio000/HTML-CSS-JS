@@ -5,6 +5,7 @@
 let myArray = [
     'a', 
     {name: 'Inacio'},
+    
     function() {
         return 'testing'
     }

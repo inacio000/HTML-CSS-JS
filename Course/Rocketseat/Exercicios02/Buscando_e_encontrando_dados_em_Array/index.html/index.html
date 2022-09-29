@@ -23,7 +23,7 @@
                         author: "T. Harv Eker",
                     },
                     {
-                        title: "O homem mais ricoa  Babilônia",
+                        title: "O homem mais rico da Babilônia",
                         author: "George S. Clason",
                     },
                     {
@@ -50,11 +50,47 @@
                 ],
             },
         ];
+        // category:
+        const category = bookCategories.length
+        console.log(`Total categories: ${category}`)
 
-        console.log(`Categories: ${bookCategories.length}`);
-        console.log(`First category has: ${bookCategories[0].books.length} books and ${bookCategories[0][0].books.indexOf('author')`)
+        //bookCategories:
+        for(let category of bookCategories) {
+            console.log(`Total books of ${category.category}`)
+            console.log(category.books.length)
+        }
+        //author: 
+       function countAuthor() {
+            let authors = []   
 
-        console.log(`Second category has: ${bookCategories[1].books.length} books`)
+            for(let category of bookCategories) {
+                for(let book of category.books) {
+                    if(authors.indexOf(book.author) == -1) {
+                        authors.push(book.author)
+                    }
+                }
+            }
+
+            console.log(`Total of authors: ${authors.length}`)
+        }
+        countAuthor()
+
+
+        function booksOfAuthor(author) {
+            let books = []
+
+            for(let category of bookCategories) {
+                for(let book of category.books) {
+                    if(book.author === author) {
+                        books.push(book.title)
+                    }
+                }
+            }
+            console.log(`Books from author ${author}: ${books.join(', ')}`)
+        }
+        booksOfAuthor('Augusto Cury')
+        booksOfAuthor('George S. Clason')
+
     </script>
 </body>
 </html>
