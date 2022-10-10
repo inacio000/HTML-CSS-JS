@@ -35,6 +35,7 @@
 * > `PRIMARY KEY`: Chave primária da tabela;
 * > `FOREING KEY`: Chave estrangeira;
 * > `DEFAULT`: Valor padrão para os campos;
+* > `AUTO_INCREMENT`: Deixa o valor um amais do que o anterior;
 #
 # Principais tipos de dados
 * > `VARCHAR`: Tipo utilizado para textos, ex: `"Inacio"`;
