@@ -5,10 +5,11 @@ const min = document.querySelector('.minutos')
 let miliNum = 0
 let segNum = 0
 let minNum = 0
-let INTERVALO
+let INTERVALO;
 
 function milissegundos() {
   miliNum++
+
   if (miliNum < 10) {
     miliseg.innerHTML = '0' + miliNum
   } else {
@@ -50,6 +51,7 @@ function iniciar() {
     milissegundos()
   }, 10)
 }
+
 
 function parar() {
   clearInterval(INTERVALO)

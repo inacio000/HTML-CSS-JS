@@ -16,6 +16,7 @@ body {
     color: white;
     text-align: center;
     padding-top: 10%;
+    border: 2px solid white;
 }
 
 h1 {
@@ -38,7 +39,6 @@ button {
     background: #3d526b;
     border: 1px solid white;
     color: white;
-    outline: none;
 }
 
 button:hover {
