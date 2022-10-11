@@ -44,3 +44,19 @@
 * > `FLOAT`: Utilizado para números com vírgula, ex: `15,4`;
 * > `DATE`: Utilizado para datas, ex: `2000-05-02`;
 * > `YEAR`: Para anos apenas;
+#
+# SQL avançado
+## Objetivo
+* Conhecer funções avançadas do `SQL`;
+* Trabalhar com agregação de dados;
+* Aprender conceitos avançados como:
+*   >   Subquery;
+*   >   Store;
+*   >   Triggers;
+*   >   Views;
+#
+# Entendendo alguns conceitos
+* `Subquery`: Uma query que contém outra query;
+* `Stored Procedure`: Uma query que pode ser executada depois de um tempo por um nome, similar a funções;
+* `Views`: Uma tabela que é formada por meio de uma query;
+* `Trigger(gatilho)`: Uma ação que é ativada com base em algum comportamento;
