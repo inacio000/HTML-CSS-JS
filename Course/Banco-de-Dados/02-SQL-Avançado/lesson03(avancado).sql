@@ -38,3 +38,58 @@ USING(film_id)
 JOIN category c
 USING(category_id)
 GROUP BY(c.name);
+
+-- subquery(uma query dentro de outra)
+-- Selecionar filmes com maior duração 
+SELECT title, length FROM film
+WHERE
+	length = (SELECT MAX(length) FROM film);
+    
+-- EXERCICIO3: Selecionar filmes com tempo de duração acima da media AVG
+SELECT title, length, rental_duration FROM film
+WHERE
+	rental_duration > (SELECT AVG(rental_duration) FROM film);
+    
+    
+-- Stored procedure sem arg e com arg
+-- escolhendo um delimitador (diz onde termina a "procedure") 
+-- e criando procedure sem arg
+DELIMITER // 
+CREATE PROCEDURE select_all_active_users ()
+BEGIN
+	SELECT * FROM customer
+    WHERE active = 1;
+END//
+DELIMITER ;
+
+-- chamando a função
+CALL select_all_active_users()
+
+-- Criando procedure com arg
+DELIMITER //
+CREATE PROCEDURE get_movies_from_category (category_name VARCHAR(100))
+BEGIN
+	SELECT f.title, c.name FROM film f
+    JOIN film_category fc
+    USING(film_id)
+    JOIN category c
+    USING(category_id)
+    WHERE c.name = category_name;
+END//
+DELIMITER ;
+
+-- executando
+CALL get_movies_from_category("Horror")
+
+
+-- EXERCICIO4: Crie uma procedure que entrega filmes maior ou igual 
+-- a um rental_duration que vem de um argumento
+DELIMITER //
+CREATE PROCEDURE get_movies_by_rd (rd INT)
+BEGIN
+	SELECT title, rental_duration FROM film
+    WHERE rental_duration >= rd;
+END//
+DELIMITER ;
+
+CALL get_movies_by_rd(6)

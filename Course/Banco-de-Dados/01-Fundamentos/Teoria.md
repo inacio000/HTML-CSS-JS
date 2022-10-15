@@ -56,7 +56,7 @@
 *   >   Views;
 #
 # Entendendo alguns conceitos
-* `Subquery`: Uma query que contém outra query;
+* `Subquery`: Uma query que contém outra query (uma query dentro de outra);
 * `Stored Procedure`: Uma query que pode ser executada depois de um tempo por um nome, similar a funções;
 * `Views`: Uma tabela que é formada por meio de uma query;
 * `Trigger(gatilho)`: Uma ação que é ativada com base em algum comportamento;
