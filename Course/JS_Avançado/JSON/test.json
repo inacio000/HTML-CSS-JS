@@ -1,0 +1,16 @@
+{
+    "name": "Inacio",
+    "age": 18,
+    "studing": true,
+    "hobbies": [
+        "Programming", 
+        "Play Basketball", 
+        "Study"
+    ],
+    "profissional_details": {
+        "profission": "Programmer",
+        "company": "KKER",
+        "since": 2020,
+        "currentlyWorking": true
+    }
+}
