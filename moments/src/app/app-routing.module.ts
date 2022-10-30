@@ -5,10 +5,9 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { NewMomentComponent } from './components/pages/new-moment/new-moment.component';
 
 const routes: Routes = [
-  // Duas páginas declaradas (urls declaradas)
-  {path: '', component: HomeComponent},
-  {path: 'about', component: AboutComponent},
-  {path: '/moments/new', component: NewMomentComponent},
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'moments/new', component: NewMomentComponent },
 ];
 
 @NgModule({

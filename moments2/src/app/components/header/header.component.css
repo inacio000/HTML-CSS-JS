@@ -1,0 +1,10 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 1px solid #777;
+}
+
+.brand, .link {
+    
+}
