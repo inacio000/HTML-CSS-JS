@@ -1,1 +1,24 @@
-<h2>Home Page</h2>
+<div class="home-container">
+    <h1>See what people share</h1>
+    <!-- Search Form -->
+    <div *ngIf="moments.length > 0; else noMoments">
+        
+        <div class="moments-container">
+            <div class="moment" *ngFor="let moment of moments">
+                <img 
+                    src="{{ baseApiUrl }}uploads/{{ moment.image }}" alt="{{ moment.title }}"
+                >
+                <h3>{{ moment.title }} </h3>
+                <p class="date">On: {{ moment.created_at }} </p>
+                <p>Comments: {{ moment.comments!.length }}</p>
+                <p><a routerLink="moments/{{ moment.id }}">Details</a></p>
+            </div>
+        </div>
+
+    </div>
+
+    <ng-template #noMoments>
+        <h1>There are no registered moments!</h1>
+    </ng-template>
+
+</div>

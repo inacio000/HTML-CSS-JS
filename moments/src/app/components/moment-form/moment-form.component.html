@@ -1,17 +1,39 @@
-<form>
+<!-- 
+    1) ativando um metodo (ngSubmit) quando surgir um invio no form 
+    2) declarar um grupo de formulario para o angular conseguir mapear os inputs e disparar as validacoes [formGroup]="momentForm"
+    3) declarando qual e aonde é o meu formulario #formDir="ngForm"
+-->
+
+<form (ngSubmit)="submit()" [formGroup]="momentForm" #formDir="ngForm">
     <div class="form-group">
         <label for="title">Title</label>
-        <input type="text" placeholder="Insert a title" required>
+        <input 
+            type="text" 
+            placeholder="Insert a title" 
+            formControlName="title" 
+            required
+        >
+        <!-- Div de validacao -->
+        <div *ngIf="title.invalid && formDir.submitted" class="validation-error">
+            <p *ngIf="title.errors?.['required']">The title is obrigatory</p>
+        </div>
     </div>
 
     <div class="form-group">
         <label for="description">Description:</label>
-        <textarea placeholder="Whats happened there?" required></textarea>
+        <textarea 
+            placeholder="Whats happened there?"             
+            formControlName="description" 
+            required>
+        </textarea>
+        <div *ngIf="description.invalid && formDir.submitted" class="validation-error">
+            <p *ngIf="description.errors?.['required']">The description is obrigatory</p>
+        </div>
     </div>
 
     <div class="form-group">
         <label for="image">Upload the best moment photo:</label>
-        <input type="file">
+        <input type="file" (change)="onFileSelected($event)">
     </div>
     <input type="submit" value="{{ btnText }}" />
 </form>
