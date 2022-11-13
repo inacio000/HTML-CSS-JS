@@ -32,6 +32,4 @@ elementsQuerySelectorAll.forEach(el => console.log(el)); // Usado por causa do N
     querySelector() -> retorna Element
 
     querySelectorAll() -> retorna Nodelist
-
-
 */ 
