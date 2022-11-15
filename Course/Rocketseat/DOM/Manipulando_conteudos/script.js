@@ -29,5 +29,13 @@ elementValue.value = "Another value";
 const elementAtribut = document.querySelector('header');
 elementAtribut.setAttribute('id', 'header');
 
+// atribuindo
 const headerId = document.querySelector('#header');
 console.log(headerId);
+ 
+// pegando
+console.log(headerId.getAttribute('id'));
+console.log(headerId.getAttribute('class'));
+
+headerId.removeAttribute('id')
+headerId.removeAttribute('class')
