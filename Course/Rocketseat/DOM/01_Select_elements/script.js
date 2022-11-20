@@ -11,7 +11,7 @@ const elementTag = document.getElementsByTagName('meta');
 console.log(elementTag)
 
 // querySelector()
-const elementQuerySelector = document.querySelector('[src');
+const elementQuerySelector = document.querySelector('[src]');
 console.log(elementQuerySelector)
 
 // querySelectorAll()
