@@ -1,3 +1,19 @@
+function sayMyName(name) {
+    console.log("After callback!");
+
+    name()
+
+    console.log("After callback!");
+}
+
+sayMyName (
+    () => {
+        console.log("Am in callback function!");
+    }
+)
+
+
+
 // callback function (chamar de volta)
 
 function sayMyName(name) {
