@@ -9,11 +9,11 @@ console.log(element.style.backgroundColor);
 
 
 // classList
-element.classList.add('active', 'green'); // adicionando classes
 console.log(element.classList)
+element.classList.add('active', 'green'); // adicionando classes
 
 element.classList.remove('active');
 
 element.classList.toggle('active'); // adiciona a class caso nao existir
 
-console.log(element.classList.value) // checando o valor da class
+console.log(element.classList) // checando o valor da class
