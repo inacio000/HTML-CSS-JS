@@ -1,3 +1,7 @@
-console.log('9' + 5) // type coersion
+let sum = '9' + 5
+console.log(sum) // type coersion
+console.log(typeof sum) // type coersion
 
-console.log(Number('9') + 5) // using type conversion
+let sum1 = (Number('9') + 5)
+console.log(sum1) // using type conversion
+console.log(typeof sum1) // using type conversion
