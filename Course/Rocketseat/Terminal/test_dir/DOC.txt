@@ -1,0 +1,6 @@
+#
+## Getting Help
+> ### man +
+
+       manual dos comandos
+* apropos

@@ -10,8 +10,9 @@
 * Interface de Linha de Comando
 * Enviar comandos
 * Ver resultados dos comandos
-* Shell ou interpretador é o ambiente
-*       Executa os comandos
+> ### Shell ou interpretador é o ambiente
+
+       Executa os comandos
         Converte com o kernel
         Bash: Bourne-again shell
             por padrão existe em ambientes Linux
@@ -30,10 +31,11 @@
 > ls | -al
 #
 ## Dicas & Truques
-* Tab completion (Completar)
-*       command
-*       arguments
-* Atalho
+> ### Tab completion (Completar)
+
+       command
+       arguments
+> ### Atalho
 
        setinhas: up - down (comandos anteriores, próximos)
        Ctrl +
@@ -43,3 +45,69 @@
             u (limpar linha)
             K (remove do cursor até o final da linha)
             L (clear)
+#
+## Getting Help
+> ### man +
+
+       manual dos comandos
+* apropos
+#
+# Arquivos e Diretórios
+> ### pwd: Mostra o diretório atual
+> ### Navegando pelas pastas
+
+       cd: Mudar de diretorio
+        . -> diretorio atual
+        .. -> voltar diretorios
+        - -> voltar de onde veio
+> ### ls: Listar arquivos e pastas
+
+       -l -> mais informações
+        -a -> all
+        -h -> human
+        -R -> recursive
+        -S -> ordenar pelo tamanho
+> ### file
+
+       tipo de arquivo
+        informações
+> ### stat
+
+        dono
+        modificações
+> ### mkdir (make directory): criar diretorios
+        
+        -p
+> ### touch
+
+        - alterar registro de data e hora de arquivos ou pastas
+        - criar um ou mais arquivos
+> ### cp: copiar
+
+        -r -> recursive
+> ### mv: mover (renomear)
+
+> ### rm: remover (para sempre)
+
+        -r -> remover um directorio
+        -f -> remover a forca
+> ### wildcards (curinga)
+
+        * -> um ou mais caracteres
+        ? -> um caractere
+> ### find: encontrar arquivos ou diretorios
+
+        find <path> arg[expression]
+        -type<d|f>
+        -name
+        ex:     find . -type f -name "*.md"
+                 find . -type d -name "*.md"
+> ### ver conteúdo de arquivos
+
+        less
+        cat
+> ### editar arquivos
+
+        nano
+        vim
+        
