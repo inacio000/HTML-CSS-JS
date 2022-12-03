@@ -15,3 +15,16 @@
 * `Ler-Interpretar-Escrever-Repetir`
 * Escrever JavaScript em um ambiente node, direto no terminal
 * Para entrar digite `node` no terminal
+#
+## Módulos
+* path
+* require()
+
+    Função/Maneira de chamar módulos nativos do NodeJS
+    * Criando módulo: `module.exports = function/array/object` etc...
+    * process.arg 
+    * flag como argumento: 
+        
+        `--name`
+        `--greeting`
+        Ex: ` node 05_process --name "Inacio Raimundo" --greeting "Are u okey?" `

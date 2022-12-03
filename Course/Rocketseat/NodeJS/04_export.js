@@ -1,0 +1,1 @@
+module.exports = "Send datas from my module";
