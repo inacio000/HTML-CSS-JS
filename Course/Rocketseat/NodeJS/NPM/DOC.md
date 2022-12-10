@@ -57,3 +57,32 @@
 * Desinstalando...
 
     * `npm uninstall <package> -g`
+#
+## Gerenciando versões das dependências
+* npm i moment
+
+    * `"moment": "^2.29.1"` major.minor.patch 
+    * Onde:
+    - 2 -> major (Versão do projeto)
+    - 29 -> minor (haverá alterações, mas não vai quebrar com as alterações do projeto)
+    - 1 -> patch (resolvendo alguma coisa dentro do pacote)
+
+        `"^"` -> Significa que se o projeto for atualizado, o npm vai atualizar as duas últimas versões
+
+        `"~"` -> Significa que se o projeto for atualizado, o npm vai atualizar apenas o `patch`
+
+        `"*"` -> Significa que se o projeto for atualizado, o npm vai mudar todas versões.
+    ### Alterando a versão 
+    * npm i moment@`major.minor.patch`
+    ### Mudar de versão 
+    * `npm outdated` (mostra os pacotes e versões)
+        
+        * Current (atual versão)
+        * Wanted (Versão mais desejada)
+        * Latest (Última versão)
+    ### Atualizando a versão
+    * npm upgrade
+    * npm i moment@latest
+#
+## Removendo pacotes
+* `npm uninstall <package>`
