@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Stap 1: Modelagem
+        class Stack {
+            constructor() {
+                this.data = [] // this. - referência
+                this.top = -1
+            }
+
+            push(value) {
+                this.top++;
+                this.data[this.top] = value;
+                return this.data;
+            }
+
+            pop() {
+                if (this.top < 0) return undefined;
+                const poppedTop = this.data[this.top]
+                delete this.data[this.top];
+                this.top--;
+                return poppedTop;
+            }
+
+            peek() {
+                return this.top >= 0 ? this.data[this.top] : undefined;
+                /* Or
+                    if (this.top >= 0) 
+                        return this.data[this.top]
+                    else 
+                        undefined
+                    
+                */
+            }
+        }
+
+        // Stap 2: Utilizando
+        const stack = new Stack() // neew - instanciando um novo objeto (stack)
+
+        // adicionando dados
+        stack.push('learning')
+        stack.push('data')
+        console.log(stack.push('structures'))
+
+        console.log(stack.peek())
+
+        // removendo
+        stack.pop()
+        console.log(stack.pop())
+
+        console.log('\n'+stack.peek())
+        console.log(stack)
+    </script>
+</body>
+</html>
