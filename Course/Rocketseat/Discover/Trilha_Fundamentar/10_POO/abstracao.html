@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+         // definir
+         class Parafuso {
+            constructor () { // Superclasse - Abstata
+                if (this.constructor === Parafuso) 
+                    throw new Error('Classe abstrata não pode ser instânciada')
+            }
+
+            get tipo() {
+                throw new Error('Método "get tipo()" precisa ser implementado')
+            }
+         }
+
+        class Fenda extends Parafuso {
+            constructor() {
+                super(); // fazendo a heranca
+            }
+            get tipo () {
+                return 'Fenda'
+            }
+        }
+
+        class Philips extends Parafuso {
+            constructor() {
+                super(); // fazendo a heranca
+            }
+            get tipo () {
+                return 'Philips'
+            }
+        }
+
+        class Allen extends Parafuso {}
+
+        // Criar e usar
+        // new Parafuso() // Classe abstrata não pode ser instanciada
+        let fenda = new Fenda();
+        let philips = new Philips();
+        let allen = new Allen();
+
+        console.log(fenda.tipo, philips.tipo)
+        console.log(allen.tipo) // Método "get tipo()" precisa ser implementado
+
+    </script>
+</body>
+</html>

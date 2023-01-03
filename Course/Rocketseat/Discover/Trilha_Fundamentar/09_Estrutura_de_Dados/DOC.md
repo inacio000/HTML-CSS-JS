@@ -37,14 +37,13 @@
         Textos, números, booleanos...
     - Como estão registrados na memória
         
-        `
+        ```js
             // Array -
             [1, 2, 3] // elementos - 1, 2, 3
-        `
 
-        `
-            // Object - { name: 'Inacio', Age: '20' } // elementos name: 'Inacio', age: '20'
-        ` 
+            // Object 
+            { name: 'Inacio', Age: '20' } // elementos name: 'Inacio', age: '20'
+        ``` 
 #
 ## Gerenciando dados
 * Estructura de dados tem a ver com a gestão das informações da aplicação.
@@ -59,7 +58,9 @@
 * Array, vetor ou arranjo, é uma estrutura amplamente utilizada e implementada em quase todas linguagens de programação.
 * Uma das estruturas mais básicas, simples de criar e utilizar.
 
-`['a', 10, 'd', true] // total de 4 elementos` 
+```js
+    ['a', 10, 'd', true] // total de 4 elementos
+``` 
 * > CARACTERÍSTICAS
     
     - Acesso pelo index
@@ -77,7 +78,8 @@
 #
 ## Array no código
 
-`
+```js
+
     const pilotos = ['Senna', 'Prost', 'Schumacher', 'Hamilton']
 
     // a indexação (index) começa pelo número 0
@@ -103,7 +105,7 @@
     // deletar um elemento
     pilotos.splice(1, 1)
     console.log(pilotos)
-`
+```
 #
 ## Matrix
 * Matriz ou Vetor multidimensional
@@ -112,7 +114,7 @@
     
     - Podemos ter muitos níveis.
 
-    `
+    ```js
     
         const students = [
             ['Inacio', 23, 'NN'],
@@ -120,7 +122,7 @@
             ['Raimundo', 23, 'S']
         ]
         console.log(students[0][0])
-    `
+    ```
 #
 ## Stack (Pilha)
 * Como uma pilha de livro
@@ -140,7 +142,8 @@
     - `peek()`: obter o elemento do topo da pilha
 * Outros métodos poderão ser implementados como `size()` para mostrar o tamanho da pilha.
 
-    `
+    ```js
+
          // Stap 1: Modelagem
         class Stack {
             constructor() {
@@ -175,7 +178,7 @@
         }
 
         // Stap 2: Utilizando
-        const stack = new Stack() // neew - instanciando um novo objeto (stack)
+        const stack = new Stack() // new - instanciando um novo objeto (stack)
 
         // adicionando dados
         stack.push('learning')
@@ -190,7 +193,7 @@
 
         console.log('\n'+stack.peek())
         console.log(stack)
-    `
+    ```
 #
 ## Queue (Fila)
 * Como uma pilha em uma loja ou 
@@ -209,7 +212,7 @@
     - `Dequeue` - saindo da fila
 * Outros métodos poderão ser implementados como `size()` para mostrar o tamanho da fila ou `front()` para pegar o primeiro elemento da fila, dentre tantos outros.
 
-    `
+    ```js
         // Stap 1: Modelagem
        class Queue {
             constructor() {
@@ -236,7 +239,7 @@
        fila.dequeue()
        fila.dequeue()
        fila.dequeue()
-    `
+    ```
 #
 ## Visão geral
 * Usamos ED para gerenciar os dados, as informações da nossa aplicação

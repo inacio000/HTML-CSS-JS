@@ -20,3 +20,4 @@
     `( ) + - / * " ; = & | # > < ^ ' { } %`
 * Não pode conter espaço
 * Não pode conter acentuação
+
