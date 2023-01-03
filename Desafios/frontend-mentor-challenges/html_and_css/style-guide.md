@@ -33,3 +33,20 @@ The designs were created to the following widths:
 
 - Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
 - Weights: 700
+
+picture img, source {
+    width: fit-content;
+    border-radius: 5px 0 0 5px;
+}
+
+.side {
+    width: fit-content;
+    margin: auto;
+   display: flex;
+   padding: 0 20px;
+   flex-direction: column;
+}
+
+.side .perfume {
+    font-weight: 700;
+}

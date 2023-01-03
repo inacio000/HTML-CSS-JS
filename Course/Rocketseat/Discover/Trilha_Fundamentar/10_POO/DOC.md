@@ -252,6 +252,5 @@
 
         console.log(fenda.tipo, philips.tipo)
         console.log(allen.tipo) // Método "get tipo()" precisa ser implementado
-
-    }
+    } 
 ```
