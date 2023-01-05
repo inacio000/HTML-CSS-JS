@@ -160,14 +160,14 @@
 #
 ## Polimorfismo 
 > Polimorfismo = `Muitas formas`
-* Quando um objeto estende de outro (`herança`) talvez haja a necessidade de reescrever uma ou mais características (`atributos e m]etodos`) nesse novo objeto.
+* Quando um objeto estende de outro (`herança`) talvez haja a necessidade de reescrever uma ou mais características (`atributos e métodos`) nesse novo objeto.
 * Recriaremos então um método (ou mais) da classe herdada
 
 ```javascript
     // Pai (Class)
     class Atleta {
         peso;
-        cateoria;
+        categoria;
 
         constructor(peso) {
             this.peso = peso;

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const cart = {
+            quantitaty: 2,
+            total: 200
+        }
+
+        // Bad 👎🏽
+        cart.quantitaty = 3
+        
+        // Good 👌🏽
+        const neCart = {...cart, quantitaty: 3}
+
+        // Exemplo em React
+        const [amount, setAmount] = useState(0)
+
+        // Bad 👎🏽
+        amount = 2
+
+        // Good 👌🏽
+        aetAmount(2)
+
+    </script>
+</body>
+</html>
