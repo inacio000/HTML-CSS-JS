@@ -1,12 +1,15 @@
 import { BrowserRouter, Route, Routes as Switch, Navigate } from "react-router-dom";
-import { DashboardPage, LoginPage } from "../pages";
+import { DashboardPage } from "../pages";
+import {LoginMain} from "../pages";
+import { LoginUseCallback } from "../pages/loginUseCallback/Login";
 
 export const Routes = () => {
     return (
         <BrowserRouter>
             <Switch>
 
-                <Route path="/login-page" element={<LoginPage />} />
+                <Route path="/login-page" element={<LoginMain />} />
+                <Route path="/login-use-callback" element={<LoginUseCallback />} />
                 <Route path="/home-page" element={<DashboardPage />} />
 
 

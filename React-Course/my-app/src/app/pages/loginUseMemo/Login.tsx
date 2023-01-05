@@ -1,8 +1,19 @@
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const LoginPage = () => {
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const handleClick = () => {
+        navigate("/home-page");
+    }
+
+    const emailLength = useMemo( () => {
+        console.log('Executed')
+        return email.length * 1000
+    }, [email.length]);
 
     const handelLogin = () => {
         console.log(email);
@@ -12,6 +23,8 @@ export const LoginPage = () => {
     return (
         <div>
             <form>
+                <p>Quantitate character in email place: {emailLength}</p>
+
                 <label>
                     <span>Email</span>
                     <input value={email} onChange={e => setEmail(e.target.value)}/>
@@ -25,7 +38,12 @@ export const LoginPage = () => {
                 <button type="button" onClick={handelLogin}>
                     Login
                 </button>
+
             </form>
+
+            <button onClick={handleClick}>
+                Home Page
+            </button>
         </div>
     );
 }
