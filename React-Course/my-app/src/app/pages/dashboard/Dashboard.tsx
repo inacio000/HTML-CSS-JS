@@ -1,21 +1,24 @@
-import { useContext, useRef } from 'react'
+import { useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { UserLoggedContext } from '../../shared/contexts'
+import { useUserLogged } from '../../shared/hooks'
 
 export const DashboardPage = () => {
 
     const counterRef = useRef({ counter: 0 })
 
-    const userLoggedContext = useContext(UserLoggedContext);
+    const {userName, logout} = useUserLogged()
 
     return (
         <>
             <h1>Dashboard Page</h1>
-            <p>{userLoggedContext.userName}</p>
+            <p>{userName}</p>
 
             <p>Counter: {counterRef.current.counter}</p>
+
             <button onClick={() => counterRef.current.counter++}>Sum</button>
             <button onClick={() => console.log(counterRef.current.counter++)}>SumConsole</button>
+
+            <button onClick={logout}>Logout</button>
 
             <div>
                 <Link to='/login-page'>Login Main</Link>
