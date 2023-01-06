@@ -1,8 +1,13 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { UserLoggedContext } from "../../shared/contexts";
+import { ButtonLogin } from "./components/ButtonLogin";
+import { InputLogin } from "./components/inputLogin";
 
 export const LoginMain = () => {
     const navigate = useNavigate();
+
+    const userLoggedContext = useContext(UserLoggedContext);
 
     const inputPasswordRef = useRef<HTMLInputElement>(null)
     const [email, setEmail] = useState('');
@@ -37,46 +42,41 @@ export const LoginMain = () => {
         console.log(password);
     }, [email, password]);
 
-    const handelLogin = () => {
-        console.log(email);
-        console.log(password);
-    }
-
     return (
         <div>
             <h1>UseRef</h1>
             <p>Para pegar a referencia de um elemento html e poder usar dentro de um CallBack ou uma função</p>
+            <p>{userLoggedContext.userName}</p>
             <form>
                 <p>Quantitate character in email place: {emailLength}</p>
 
-                <label>
-                    <span>Email</span>
-                    <input 
-                        value={email} 
-                        onChange={e => setEmail(e.target.value)}
-                        onKeyDown={e => e.key === 'Enter' ? inputPasswordRef.current?.focus() : undefined}
-                    />
-                </label>
-            
-                <label>
-                    <span>Password</span>
-                    <input 
-                        type={password}
-                        value={password}
-                        ref={inputPasswordRef} 
-                        onChange={e => setPassword(e.target.value)}
-                    />
-                </label>
+                
+                <InputLogin 
+                    label="Email"
+                    value={email}
+                    onChange={newValue => setEmail(newValue)}
+                    onPressEnter={() => inputPasswordRef.current?.focus()}/>
 
-                <button type="button" onClick={handelLogin1}>
+                <InputLogin 
+                    label="Password"
+                    type="password"
+                    value={password}
+                    ref={inputPasswordRef} 
+                    onChange={newValue => setPassword(newValue)}/>
+                <ButtonLogin type="button" onClick={handelLogin1}>
                     Login
-                </button>
+                </ButtonLogin>
+
+                {/* <button type="button" onClick={handelLogin1}>
+                    Login
+                </button> */}
 
             </form>
 
             <button onClick={handleClick}>
                 Home Page
             </button>
+
         </div>
     );
 }

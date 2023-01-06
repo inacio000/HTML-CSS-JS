@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes as Switch, Navigate } from "react-router-dom";
 import { DashboardPage } from "../pages";
 import {LoginMain} from "../pages";
-import { LoginUseCallback } from "../pages/loginUseCallback/Login";
+import { LoginUseCallback } from "../pages/loginUseCallback/LoginCallback";
 
 export const Routes = () => {
     return (
