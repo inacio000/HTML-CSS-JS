@@ -50,10 +50,10 @@ export const DashboardPage = () => {
                                 checked={listItem.isSelected}
                                 onChange={ () => {
                                     setList(oldList => {
-                                        return oldList.map(oldListItem => {
-                                            const newIsSelected = oldListItem.title === listItem.title? !oldListItem.isSelected : oldListItem.isSelected;
-                                            return {
-                                                ...oldListItem,
+                                            return oldList.map(oldListItem => {
+                                                const newIsSelected = oldListItem.title === listItem.title? !oldListItem.isSelected : oldListItem.isSelected;
+                                                return {
+                                                    ...oldListItem,
                                                 isSelected: newIsSelected
                                             }
                                         });
