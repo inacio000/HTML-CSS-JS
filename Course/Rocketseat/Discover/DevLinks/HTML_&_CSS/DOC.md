@@ -20,4 +20,8 @@
   <body></body>
 </html>
 ```
+
+```css
+  box-sizing: border-box; /* A medida do tamanho da caixa será medida atrvés do tamanho da borda */
+```
 * Em elementos `inline` margin-auto não funciona
