@@ -14,8 +14,10 @@
     <!-- Compatibilidade com navegadores mais antigos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- A viewport tem uma largura com largura do dispositivo (adaptando-se), com uma escala inicial de 1 -->
+    <link rel="stylesheet" href=""> <!-- Relacionamento com um file do tipo stylesheet -->
     <title>Document</title>
   </head>
   <body></body>
 </html>
 ```
+* Em elementos `inline` margin-auto não funciona
