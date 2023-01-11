@@ -2,7 +2,7 @@
     "liveServer.settings.port": 5502,
       // editor
   "editor.wordWrap": "on",
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "editor.lineHeight": 30,
   "editor.tabSize": 2,
   "editor.bracketPairColorization.enabled": true,
