@@ -1,14 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { StyledButton, Button2 } from './components/Button.style';
+import { Wrapper } from './components/Wrapper.styled';
+import { GlobalStyle } from './GlobalStyle';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-     <h1>Front Beginners</h1>
-    </div>
+     <Wrapper>
+       <StyledButton backgroundColor='white'>Front Beginners</StyledButton>
+       <StyledButton backgroundColor='blue'>Front Beginners</StyledButton>
+       <StyledButton>Front Beginners</StyledButton>
+       {/* <Button2>Front Beginners</Button2> */}
+       <a href="#">Click here</a>
+     </Wrapper>
   )
 }
 
