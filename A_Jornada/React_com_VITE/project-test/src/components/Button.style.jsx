@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 import ButtonStyled from './Button';
+import {theme} from '../Theme';
 
 export const StyledButton = styled.button`
     // Put the styles
 
     background-color: ${(props) => 
         props.backgroundColor ? 
-        props.backgroundColor : 'red'
+        props.backgroundColor : `${({ theme }) => theme.colors.secondary}`
     };
     width: 100px;
-    height: 60px;
+    height: ${({ theme }) => theme.size.xxl};
     cursor: pointer;
 
     &:hover {

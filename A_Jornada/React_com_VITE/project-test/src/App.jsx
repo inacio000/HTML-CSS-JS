@@ -1,5 +1,6 @@
 import { StyledButton, Button2 } from './components/Button.style';
 import { Wrapper } from './components/Wrapper.styled';
+import { GlobalStyle } from './GlobalStyle';
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
        <StyledButton backgroundColor='white'>Front Beginners</StyledButton>
        <StyledButton backgroundColor='blue'>Front Beginners</StyledButton>
        <StyledButton>Front Beginners</StyledButton>
-       <Button2>Front Beginners</Button2>
+       {/* <Button2>Front Beginners</Button2> */}
        <a href="#">Click here</a>
      </Wrapper>
   )
