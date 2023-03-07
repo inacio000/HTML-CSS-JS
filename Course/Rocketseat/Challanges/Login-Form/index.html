@@ -1,12 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Login Form</title>
 </head>
+
 <body>
-    
+    <main>
+        <section id="fr-section">
+            <header>
+                <img src="src/images/logo.svg" alt="Logo image">
+            </header>
+            <form action="#">
+                <div id="form-header">
+                    <header id="header-form">
+                        <img src="src/images/log-in.svg" alt="">
+                        <h1>Faça seu login</h1>
+                    </header>
+                    <p>Entre com suas informações de cadastro</p>
+                </div>
+
+                <div class="form-input">
+                    <label for="name">E-mail</label>
+                    <div class="input-section">
+                        <input type="email" name="email" id="mail" placeholder="Digite seu e-mail">
+                        <ion-icon class="uil uil-envelope fr" name="mail-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="form-input">
+                    <label for="name">Senha</label>
+                    <div class="input-section">
+                        <input class="password" type="password" name="email" placeholder="Digite sua senha">
+                        <ion-icon class="uil uil-lock fr" name="lock-closed-outline"></ion-icon>
+                        <ion-icon class="uil uil-eye-slash" name="eye-off-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div id="check">
+                    <div class="checkbox">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Lembre-me</label>
+                    </div>
+                    <p><a href="">Esqueci minha senha</a></p>
+                </div>
+
+                <div>
+                    <button>Entrar </button>
+                </div>
+                <div id="account">
+                    <p>Não tem uma conta? <a href="">Registre-se</a></p>
+                </div>
+            </form>
+        </section>
+        <section id="nd-section">
+            <img src="src/images/side-image.jpg" alt="">
+        </section>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

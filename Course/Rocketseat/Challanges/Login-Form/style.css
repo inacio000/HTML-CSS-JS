@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+body {
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    background-color: var(--background);
+    border: 1px solid red;
+
+}
+
+h1 {
+    color: var(--text-title);
+}
+
+p,
+label {
+    color: var(--text-base);
+}
+
+main {
+    /* width: fit-content; */
+    display: flex;
+    justify-content: space-between;
+}
+
+main #fr-section {
+    /* width: 100%; */
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+main #nd-section {
+    /* width: fit-content; */
+    border: 1px solid red;
+}
+
+main #fr-section header {
+    width: 100%;
+    display: flex;
+}
+
+main #fr-section form {
+    width: 500px;
+    margin-top: 12.5%;
+    padding: 25px 50px;
+    background-color: var(--form-background);
+    border: 1px solid red;
+}
+
+main form #form-header {
+    margin-bottom: .5rem;
+}
+
+main form #header-form {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 5px;
+}
+
+main form .form-input, #check {
+    margin-top: 27px;
+}
+
+main form .form-input .input-section {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+}
+
+main form .form-input input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0 2.5rem;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: var(--text-base);
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid var(--text-base);
+}
+
+main .form-input input:is(:focus, :active) {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+}
+
+ion-icon {
+    position: absolute;
+    font-size: 30px;
+    transform: translateY(-10%);
+    color: var(--text-base);
+}
+
+.fr {
+    padding-left: .5rem;
+    left: 0;
+}
+
+.uil-eye-slash {
+    right: 0;
+    cursor: pointer;
+    padding-right: .8rem;
+}
+
+main .form-input input:is(:focus, :active) ~ .uil {
+    color: var(--primary-color);
+}
+
+main form input::placeholder {
+    font-size: 16px;
+    color: var(--text-base);
+}
+
+main form #check {
+    display: flex;
+    justify-content: space-between;
+}
+
+main form .checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+}
+
+main form .checkbox input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: red;
+    appearance: none;
+    background: transparent;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+main form .checkbox input:checked {
+    appearance: auto;
+    border-radius: 10px;
+    accent-color: var(--primary-color);
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    margin: 20px 0 14px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+main form #account {
+    text-align: center;
+}
+
+main form, #check p, #account p, a {
+    color: var(--primary-color);
+}
+
+main form #account a {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
