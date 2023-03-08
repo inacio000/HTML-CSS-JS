@@ -13,13 +13,11 @@
 }
 
 body {
-    max-width: 1400px;
-    height: auto;
+    max-width: 1300px;
+    max-height: 100vh;
     margin: 0 auto;
     font-family: 'Poppins', 'Roboto', sans-serif;
     background-color: var(--background);
-    border: 1px solid red;
-
 }
 
 h1 {
@@ -32,37 +30,31 @@ label {
 }
 
 main {
-    /* width: fit-content; */
+    width: 100%;
+    margin-top: .2rem;
     display: flex;
     justify-content: space-between;
 }
 
 main #fr-section {
-    /* width: 100%; */
-    /* height: auto; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding: 40px;
-}
-
-main #nd-section {
-    /* width: fit-content; */
-    border: 1px solid red;
+    padding: 35px;
 }
 
 main #fr-section header {
     width: 100%;
-    display: flex;
 }
 
 main #fr-section form {
     width: 500px;
-    margin-top: 12.5%;
+    height: auto;
+    margin-top: 8%;
     padding: 25px 50px;
     background-color: var(--form-background);
-    border: 1px solid red;
 }
 
 main form #form-header {
@@ -75,8 +67,8 @@ main form #header-form {
     margin-bottom: 5px;
 }
 
-main form .form-input, #check {
-    margin-top: 27px;
+main form .form-input {
+    margin-top: 1.5rem;
 }
 
 main form .form-input .input-section {
@@ -89,7 +81,7 @@ main form .form-input .input-section {
     border: none;
 }
 
-main form .form-input input {
+main form .form-input .input-section input {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -103,8 +95,9 @@ main form .form-input input {
     border: 1px solid var(--text-base);
 }
 
-main .form-input input:is(:focus, :active) {
+main .form-input input:is(:focus) {
     background: transparent;
+    outline: red auto;
     border: 2px solid var(--primary-color);
 }
 
@@ -131,13 +124,13 @@ main .form-input input:is(:focus, :active) ~ .uil {
 }
 
 main form input::placeholder {
-    font-size: 16px;
-    color: var(--text-base);
+    font-size: 20px;
 }
 
 main form #check {
     display: flex;
     justify-content: space-between;
+    margin-top: 27px;
 }
 
 main form .checkbox {
@@ -151,7 +144,6 @@ main form .checkbox input {
     width: 20px;
     height: 20px;
     cursor: pointer;
-    accent-color: red;
     appearance: none;
     background: transparent;
     border: 1px solid #bbb;
@@ -170,6 +162,7 @@ button {
     margin: 20px 0 14px;
     font-size: 18px;
     font-weight: 600;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
     background-color: var(--primary-color);
@@ -179,7 +172,10 @@ main form #account {
     text-align: center;
 }
 
-main form, #check p, #account p, a {
+main form,
+#check p,
+#account p,
+a {
     color: var(--primary-color);
 }
 
@@ -189,4 +185,95 @@ main form #account a {
 
 a {
     text-decoration: none;
+}
+
+@media(max-width:1126px) {
+    #nd-section {
+        display: none;
+    }
+}
+
+@media(max-width:600px) {
+    body {
+        height: 100vh;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    main #fr-section {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    main #fr-section header {
+        padding: 40px;
+    }
+
+    main #fr-section form {
+        width: 100%;
+        margin-top: 12.5%;
+        background-color: var(--background);
+    }
+}
+
+@media(max-width: 445px) {
+
+    main #fr-section #fr-header {
+        padding: 1rem;
+    }
+
+    main #fr-section form {
+        padding: 1rem;
+        margin-top: 0;
+    }
+
+    main form #form-header header {
+        padding: 0;
+    }
+    
+}
+
+@media(max-width:377px) {
+    main #fr-section #fr-header {
+        padding: .5rem;
+    }
+
+    main #fr-section #fr-header p {
+        text-align: center;
+    }
+
+    main #fr-section form {
+        padding: .5rem;
+    }
+
+    main #fr-section header {
+        display: flex;
+        justify-content: center;
+    }
+
+    main form #form-header p {
+        text-align: center;
+    }
+
+    main form #check {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main form #check p {
+        margin-top: .5rem;
+        text-align: center;
+    }
+
+    main form input::placeholder {
+        font-size: 16px;
+    }
+
+    ion-icon {
+        font-size: 24px;
+        transform: translateY(-5%);
+    }
 }
