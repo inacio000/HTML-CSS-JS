@@ -19,15 +19,20 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    padding: 1rem;
+    margin: 200px 0 50px;
 }
 
 main h1 {
+    display: inline-block;
+    text-align: center;
     font-size: 64px;
     font-weight: 700;
 }
 
 p {
+    display: inline-block;
+    text-align: center;
     font-size: 18px;
     font-weight: 600;
 }
@@ -47,6 +52,7 @@ div:nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 50px;
     margin-top: 72px;
 }
