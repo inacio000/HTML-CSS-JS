@@ -1,6 +1,6 @@
 {
-    "liveServer.settings.port": 5502,
-      // editor
+  "liveServer.settings.port": 5502,
+  // editor
   "editor.wordWrap": "on",
   "editor.fontSize": 14,
   "editor.lineHeight": 30,
