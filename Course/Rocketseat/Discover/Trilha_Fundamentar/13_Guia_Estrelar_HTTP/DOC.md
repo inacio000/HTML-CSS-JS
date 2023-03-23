@@ -65,7 +65,7 @@
     - Jogar uma moeda
     - Sessões
 
-      - Cookies (Rastros de informações ou histórias da navegação)
+      - Cookies (Biscoitos/Rastros de informações ou históricos de navegação)
       - Storeges
 
   - ### Extensivel
@@ -336,3 +336,71 @@
         - Response: `POSSIBILIDADE`
       - Uso em formulários HTML: `NO`
       - Cacheable: `NO`
+## HEADERS 
+  ![IdempotenceDef](./headers-context.png)
+  - Cabeçalhos
+  - Informações adicionais para o pedidio ou resposta
+  - Nome: valor
+    - content-type: application/json
+    - content-type: text/html
+  - ### HEADERS por contextos
+    - General (recebe headers para o `response` e `request`)
+      ```
+      Request URL: http://google.com = "URL DO PEDIDIO"
+      Request Method: GET = "MÉTODO DO PEDIDIO"
+      Status: 301 = RESPOSTA DO SERVIDOR
+      Remote Adress: 172.217.173.110:443 = ENDEREÇO IP COM A PORTA 443
+      Referrer Policy: strict-origin-when-cross-origin
+      ```
+    - Response headers
+      ```
+      accept-ch: Sec-CH-UA-Platform
+      accept-ch: Sec-CH-UA-Platform-Version
+      accept-ch: Sec-CH-UA-Full-Version
+      accept-ch: Sec-CH-UA-Arch
+      accept-ch: Sec-CH-UA-Model
+      accept-ch: Sec-CH-UA-Bitness
+      accept-ch: Sec-CH-UA-Full-Version-List
+      accept-ch: Sec-CH-UA-WoW64
+      alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      cache-control: private
+      content-encoding: br
+      content-length: 46828
+      ```
+    - Request headers
+      ```
+      :authority: www.google.com
+      :method: GET
+      :path: /
+      :scheme: https
+      .
+      .
+      .
+      ```
+
+## HTTP STATUS CODE (faz uma comunicação clara entre o backend e o cliente)
+  ## `100`
+  > - 100: continue
+  
+  ## `200`
+  > - 200: OK (GET, POST)
+  > - 201: Created (PUT)
+  > - 204: No Content (DELETE, PUT)
+  
+  ## `300`
+  > - 301: Moved Permanently
+  > - 308: Permanent Redirect
+  > - 302: Found (Temporary Redirect, GET)
+  > - 307: Temporary Redirect
+
+  ## `400`
+  > - 400: Bad Request
+  > - 401: Unauthorized
+  > - 403: Forbidden (Not Allowed)
+  > - 404: Not Found
+  > - 405: Method Not Allowed
+  > - 429: Too Many Requests
+
+  ## `500`
+  > - 500: Internal Server Error
+  > -503: Service Unavailable
