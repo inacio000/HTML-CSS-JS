@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxo de caixa familiar</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        let familiarExpenses = {
+            incomes: [122, 34.3, 55, 100, 100, 145.4, 38],
+            expenses: [22, 45.4, 32, 12.5, 500]
+        }
+
+        function sum(array) {
+            let total = 0
+
+            for(let value of array) {
+                total += value
+            }
+
+            return total
+        }
+ 
+
+        function calculateBalance() {
+            const calculateIncomes = sum(familiarExpenses.incomes)
+
+            const calculateExpenses = sum(familiarExpenses.expenses)
+
+            const total = calculateIncomes - calculateExpenses
+
+            const itsOkey = total >= 0
+            let balanceText = 'Negative'
+
+            if(itsOkey) {
+                balanceText = 'Positive'
+            }
+
+            console.log(`Your balance is ${balanceText}: ${total.toFixed(2)}R$`)
+        }
+        
+        calculateBalance()
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscando e encontrando dados em Array</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        const bookCategories = [
+            {
+                category: "Riqueza",
+                books: [
+                    {
+                        title: "Os segredos da mente milionária",
+                        author: "T. Harv Eker",
+                    },
+                    {
+                        title: "O homem mais rico da Babilônia",
+                        author: "George S. Clason",
+                    },
+                    {
+                        title: "Pai rico, pai pobre",
+                        author: "Robert T. Kiyosaki e Sharon L. Lenchter",
+                    }
+                ]
+            },
+            {
+                category: "Riqueza",
+                books: [
+                    {
+                        title: "Inteligência emocional",
+                        author: "Augusto Cury",
+                    },
+                    {
+                        title: "Ansiedade - Como enfrentar o mal do século",
+                        author: "Augusto Cury",
+                    },
+                    {
+                        title: "Os 7 hábitos das pessoas altamente eficazes",
+                        author: "Stephen R. Covery",
+                    }
+                ],
+            },
+        ];
+        // category:
+        const category = bookCategories.length
+        console.log(`Total categories: ${category}`)
+
+        //bookCategories:
+        for(let category of bookCategories) {
+            console.log(`Total books of ${category.category}`)
+            console.log(category.books.length)
+        }
+        //author: 
+       function countAuthor() {
+            let authors = []   
+
+            for(let category of bookCategories) {
+                for(let book of category.books) {
+                    if(authors.indexOf(book.author) == -1) {
+                        authors.push(book.author)
+                    }
+                }
+            }
+
+            console.log(`Total of authors: ${authors.length}`)
+        }
+        countAuthor()
+
+
+        function booksOfAuthor(author) {
+            let books = []
+
+            for(let category of bookCategories) {
+                for(let book of category.books) {
+                    if(book.author === author) {
+                        books.push(book.title)
+                    }
+                }
+            }
+            console.log(`Books from author ${author}: ${books.join(', ')}`)
+        }
+        booksOfAuthor('Augusto Cury')
+        booksOfAuthor('George S. Clason')
+
+    </script>
+</body>
+</html>

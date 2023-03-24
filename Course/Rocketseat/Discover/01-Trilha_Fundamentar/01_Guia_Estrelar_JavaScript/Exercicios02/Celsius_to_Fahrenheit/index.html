@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius to Fahrenheit</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        // let celsius = ''
+        // let fahreheit = '40'
+
+        // function toCelsius(number) {
+        //     to = ((Number(number) - 32) * 5/9)
+        //     return to
+        // }
+        // console.log(typeof(celsius))
+        // console.log(toCelsius(fahreheit))
+        
+        // transformDegree('50F')
+        function transformDegree(degree) {
+            const celsiusExists = degree.toUpperCase().includes('C')
+            const fahreheitExists = degree.toUpperCase().includes('F')
+
+            // error fluxo
+            if(!celsiusExists && !fahreheitExists) {
+                throw new Error('Degree dont exists')
+            }  
+            
+            // fluxo ideal, F -> C
+            let updateDegree = Number(degree.toUpperCase().replace("F", ""))
+            let formula = (fahreheit) => (fahreheit - 32) * 5/9
+            let degreeSign = 'C'
+
+            // alternative fluxo, C -> F 
+            if (celsiusExists) {
+                updateDegree = Number(degree.toUpperCase().replace("C", ""))
+                formula = celsius => celsius * 9/5 + 32
+                degreeSign = 'F'
+            }
+
+            return formula(updateDegree) + degreeSign
+        }
+
+        try {
+            console.log(transformDegree('10c'))
+            console.log(transformDegree('50f'))
+        } catch (error) {
+            console.log(error.message)
+        }
+        
+
+    </script>
+</body>
+</html>
