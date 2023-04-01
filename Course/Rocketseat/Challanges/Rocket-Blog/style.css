@@ -16,6 +16,8 @@
 }
 
 body {
+    width: 100%;
+    margin: 0 auto;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
@@ -25,6 +27,7 @@ main {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    border: 2px solid red;
 }
 
 section {
@@ -90,10 +93,15 @@ header nav ul li a:hover::before {
     height: 16px;
 }
 
+header .burger {
+    display: none;
+}
+
 input {
     width: 300px;
     height: 44px;
     padding: 14px 0 14px 25px;
+    font-size: 18px;
     background: var(--input-bg);
     border: none;
     border-radius: 5px;
@@ -125,6 +133,7 @@ input::placeholder {
 
 .search-icon img {
     width: 24px;
+    cursor: pointer;
 }
 
 .section-in {
@@ -162,6 +171,7 @@ input::placeholder {
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-bottom: 1rem;
 }
 
 .section-in .fr-div .see-more p {
@@ -203,14 +213,158 @@ container .cont-sc .cont-sc-fr {
     gap: 10px;
 }
 
-container .section {
+container .cont-sc .cont-sc-fr-sc {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+container .section {
+    width: fit-content;
     margin: 64px 0;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 container .section .sec-in {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+/* Media Queries */
+@media (max-width: 1300px) {
+    container .section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1210px) {
+
+    header .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    container .cont-fr {
+        flex-wrap: wrap;
+    }
+
+    header nav ul {
+        width: 250px;
+        height: 420px;
+        background: linear-gradient(to top, var(--input-bg), var(--section-bg), var(--tittle-color));
+        position: absolute;
+        right: 0;
+        top: 115px;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-right: 8rem;
+        border-radius: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 24px;
+    }
+
+    .section-in, .section-in .fr-div-in {
+        padding-right: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 998px) {
+    container .section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 846px) {
+
+    main {
+        width: 100%;
+    }
+
+    header nav ul {
+        margin-right: 60px;
+    }
+
+    section {
+        padding: 60px;
+    }
+
+    .input {
+        display: none;
+    }
+
+    container .cont-fr {
+       justify-content: center;
+    }
+
+}
+
+
+@media (max-width:  600px) {
+
+    header nav ul {
+        margin-right: 50px;
+    }
+
+    section {
+        padding: 60px 40px;
+    }
+
+    .big-image {
+        width: 450px;
+    }
+
+    container {
+        padding: 50px 30px;
+    }
+
+    container .cont-fr {
+        gap: 20px;
+    }
+}
+
+@media(max-width: 480px) {
+    .big-image {
+        width: 400px;
+    }
+}
+
+@media(max-width: 438px) {
+
+    .logo a img {
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    header nav ul {
+        width: 100%;
+        margin: 0;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .big-image, .sec-in img {
+        width: 200px;
+    }    
+
+    .fr-div, .fr-div-in, .sec-in, .cont-fr, .cont-fr-in {
+        text-align: center;
+        align-items: center;
+    }
 }
