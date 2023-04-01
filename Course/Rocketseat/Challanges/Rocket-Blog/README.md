@@ -1,5 +1,5 @@
 # Rocket Blog
-<img src="capa.png"></img>
+![preview](Capa.png)
 
 ## Techs
 
