@@ -1,14 +1,9 @@
-const express = require('express'); // chamando o express
+const express = require('express')
 
-const app = express(); // Iicializando o express
+const app = express()
 
-app.listen('3000') //Ouvindo a porta 3000 (criando o server)
+app.listen('3000')
 
-// Criando uma routa DELETE
+app.route('/').get( (req, res) => res.send(req.query))
 
-let author = "Inacio"
-
-app.route('/:id').delete( (req, res) => {
-
-    res.send(`${req.params.id} deleted...`)
-})
+app.route('/about/user').get( (req, res) => res.send(req.query))
