@@ -1,6 +1,6 @@
 .card {
     width: 50%;
-    height: 100px;
+    height: 70px;
 
     background: #735bf2;
     color: #fff;
@@ -16,4 +16,8 @@
 
 .card strong {
     font-size: 18px;
+}
+
+.card strong, small {
+    background: transparent;
 }

@@ -20,7 +20,6 @@ export function Home() {
     };
 
     setStudents(prevState => [...prevState, newStudent]) // SpedOperator Pegando o conteudo anterior do estado
-
     // ['first content']
     // ['first content', 'second content']
   }
