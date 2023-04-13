@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition and Duration Property</title>
+    <style>
+        body {
+            background: gray;
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            position: relative;
+            border-radius: 100%;
+            
+            animation-name: example;
+            animation-duration: 2s;
+            animation-delay: 4s;
+            animation-fill-mode: both;
+            /* animation-iteration-count: infinite; */
+        }
+
+        @keyframes example {
+            0% {
+                left: 0;
+                background-color: blue;
+            }
+
+            50% {
+                left: 200px;
+                background-color: yellow;
+            }
+
+            100% {
+                left: calc(100% - 100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>
